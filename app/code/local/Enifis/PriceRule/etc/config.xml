@@ -1,0 +1,32 @@
+<config>	
+    <modules>
+        <Enifis_PriceRule>
+            <version>0.2.0</version>
+        </Enifis_PriceRule>
+    </modules>
+    <global>
+        <models>
+            <catalogrule>
+                <rewrite>
+                    <observer>Enifis_PriceRule_Model_Observer</observer>
+                </rewrite>
+            </catalogrule>
+            <catalogrule_resource>
+                <rewrite>
+                    <rule_product_price>Enifis_PriceRule_Model_Resource_Rule_Product_Price</rule_product_price>
+                </rewrite>
+            </catalogrule_resource>
+            <weee_resource>
+                <rewrite>
+                    <tax>Enifis_PriceRule_Model_Resource_Rule_Tax</tax>
+                </rewrite>
+            </weee_resource>
+            <catalog>
+                <rewrite>
+                    <product_type_price>Enifis_PriceRule_Model_Product_Type_Price</product_type_price>
+                </rewrite>
+            </catalog>
+        </models>
+    </global>
+
+</config> 
